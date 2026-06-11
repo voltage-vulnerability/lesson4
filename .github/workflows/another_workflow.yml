@@ -1,0 +1,20 @@
+name: another workflow
+
+on:
+ push:
+   branches:
+     - main
+jobs:
+ a_simple_job:
+  name: another_simple_job
+  runs-on: ubuntu-latest
+  steps:
+  - name: mystep
+    id: stepId
+    run: echo "This run as soon as some one push on main branch"
+    
+    
+
+   
+
+   
